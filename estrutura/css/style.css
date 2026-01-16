@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 @import url('https://fonts.cdnfonts.com/css/elastic');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
 body {
     background-color: #bfe6ef;
+    font-family: 'nunito', sans-serif;
 }
 * {
     margin: 0;
@@ -50,6 +52,7 @@ body {
     }
 }
 
+/*página de login*/
 .login-container {
   background-color: #a66246;
   padding: 40px;
@@ -128,6 +131,7 @@ button:hover {
   margin-top: -160px;
   margin-left: 720px;
 }
+/*página de login acaba aqui*/
 
 /* Container que controla o layout */
 .produtos {
@@ -155,7 +159,6 @@ button:hover {
 
 /*parte "quem somos?" da página index :)*/
 .quem-somos {
-  background-color: #cfeef3;
   padding: 60px 0;
 }
 
@@ -169,32 +172,50 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  position: relative;
 }
 
 .quem-texto {
   color: #fff;
   max-width: 500px;
+  text-shadow: 2px 2px #0000;
 }
 
 .quem-texto h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 44px;
+  margin-bottom: 15px;
+  font-family: 'poppins', sans-serif;
 }
 
 .quem-texto p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
+  font-family: 'poppins', sans-serif;
 }
 
 .quem-imagens {
   display: flex;
   align-items: flex-end;
+  position: absolute;
+  right: -80px;
+  bottom: 0;
   gap: 0px;
 }
 
 .quem-imagens img {
-  width: 200px;
+  width: 660px;
 
+}
+/*acaba aqui*/
+
+/*produtos da página inicial*/
+
+.principais h2 {
+  font-family: 'poppins', sans-serif;
+  color:#5f8f8a;
+  margin-left: 30px;
+  font-size: 35px;
+  text-shadow: 2px 2px #23504e;
 }
 
 .produto-index {
@@ -204,7 +225,7 @@ button:hover {
   text-align: center;
   height: 275px;
   width: 225px;
-  background-color: #dbffff;
+  background-color: #cfeff4;
   padding: 10px;
   border-radius: 8px;
 }
@@ -217,4 +238,7 @@ button:hover {
   margin-block-end: 5vh;
   gap: 60px;
   flex-wrap: wrap;
+  background-color: #bfe6ef;
 }
+
+/*parte do banho e tosa da página inicial*/
