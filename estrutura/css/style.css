@@ -28,15 +28,16 @@ body {
       letter-spacing: 2.4px;
     }
     a:not(.active) {
-      color:#00B3B2;
-      text-shadow: 2px 2px #23504e;
+      color:#ffff;
+      text-decoration: none;
     }
     .active {
       color: #23504e;
       font-size: 18.4px;
+      text-decoration: none;
     }
     a:hover {
-      color:#dbffff;
+      color:#a5e4e4;
     }
     .btn-login {
       background-color: #a66246;
