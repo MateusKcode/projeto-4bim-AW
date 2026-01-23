@@ -243,3 +243,47 @@ button:hover {
 }
 
 /*parte do banho e tosa da página inicial*/
+
+/*retangulo*/
+.banho-e-tosa {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #5f8f8a;
+  border-radius: 30px;
+  padding: 20px;
+  min-height: 300px;
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+}
+
+/*BASE (PC)*/
+.img-banho {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  object-fit: cover;
+}
+
+.agendar-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  flex-shrink: 0.7; 
+}
+.txt-banho {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-family: 'poppins', sans-serif;
+  color: #fff;
+}
+
+.ir-agendar {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* AINDA FALTA FINALIZAR ESSA PARTE, AJEITO QND CHEGAR DA ESCOLA */
