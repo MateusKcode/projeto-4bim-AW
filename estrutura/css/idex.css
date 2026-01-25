@@ -192,3 +192,55 @@
   font-weight: bold;
   color: #444;
 }
+
+
+/* ===============================
+   RESPONSIVIDADE - MOBILE / TABLET
+   =============================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  header, nav, main, footer {
+    padding: 10px;
+  }
+
+  .container, .conteudo, .produtos {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  header, nav, main, footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .produtos, .cards, .itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input, button, select {
+    width: 100%;
+    max-width: 320px;
+  }
+}

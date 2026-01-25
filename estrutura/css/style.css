@@ -138,3 +138,59 @@ button:hover {
   margin-left: 720px;
 }
 /*página de login acaba aqui*/
+
+/* ===============================
+   RESPONSIVIDADE - MOBILE / TABLET
+   =============================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  header, nav, main, footer {
+    padding: 10px;
+  }
+
+  .container, .conteudo, .produtos {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  header, nav, main, footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .produtos, .cards, .itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input, button, select {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+.menu-mobile{display:none;font-size:32px;cursor:pointer;position:absolute;top:20px;right:20px;z-index:1001}
+.nav-mobile{display:none;flex-direction:column;position:fixed;top:0;right:0;width:220px;height:100vh;background:#fff;padding:80px 20px;box-shadow:-2px 0 10px rgba(0,0,0,.2);z-index:1000}
+.nav-mobile a{margin:15px 0;text-decoration:none;color:#333;font-size:18px}
+@media(max-width:768px){nav{display:none}.menu-mobile{display:block}}
