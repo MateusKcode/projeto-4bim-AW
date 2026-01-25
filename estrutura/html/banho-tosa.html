@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banho e Tosa Petlândia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../../fotos/logo-pet.png">
+    <script src="../javascript/main.js"></script>
+</head>
+<body>
+    <nav class="nav-bar">
+        <h1 class="petlandia">Petlândia</h1>
+        <a href="../html/index.html">Página Inicial</a>
+        <a href="../html/banho-tosa.html" class="active">Banho e Tosa</a>
+        <a href="../html/produtos.html">Produtos</a>
+        <a href="../html/login.html" class="btn-login">Login</a>
+    </nav>
+
+    <section class="form-banho-tosa">
+  <h2>Agendamento de Banho & Tosa</h2>
+
+  <form action="#" method="post">
+    
+    <!-- Dados do dono -->
+    <label for="nome-dono">Nome do responsável:</label>
+    <input type="text" id="nome-dono" name="nome-dono" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+
+    <!-- Dados do pet -->
+    <label for="nome-pet">Nome do pet:</label>
+    <input type="text" id="nome-pet" name="nome-pet" required>
+
+    <label for="tipo-pet">Tipo do pet:</label>
+    <select id="tipo-pet" name="tipo-pet" required>
+      <option value="">Selecione</option>
+      <option value="cachorro">Cachorro</option>
+      <option value="gato">Gato</option>
+      <option value="outro">Outro</option>
+    </select>
+
+    <label for="porte">Porte do pet:</label>
+    <select id="porte" name="porte" required>
+      <option value="">Selecione</option>
+      <option value="pequeno">Pequeno</option>
+      <option value="medio">Médio</option>
+      <option value="grande">Grande</option>
+    </select>
+
+    <!-- Serviço -->
+    <label for="servico">Serviço desejado:</label>
+    <select id="servico" name="servico" required>
+      <option value="">Selecione</option>
+      <option value="banho">Banho</option>
+      <option value="tosa">Tosa</option>
+      <option value="banho-tosa">Banho e Tosa</option>
+    </select>
+
+    <!-- Data -->
+    <label for="data">Data desejada:</label>
+    <input type="date" id="data" name="data" required>
+
+    <!-- Observações -->
+    <label for="observacoes">Observações:</label>
+    <textarea id="observacoes" name="observacoes" rows="4"
+      placeholder="Ex: pet agressivo, alergias, tipo de tosa..."></textarea>
+
+    <!-- Botão -->
+    <button type="button" class="btn-agendar" onclick="window.location.href='../html/agendado.html'">
+  Agendar
+</button>
+
+  </form>
+</section>
+    <style>
+        .form-banho-tosa {
+  background-color: #e9f8fb;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.form-banho-tosa h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-banho-tosa label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-banho-tosa input,
+.form-banho-tosa select,
+.form-banho-tosa textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-banho-tosa button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #4fa3a5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-banho-tosa button:hover {
+  background-color: #3b8b8d;
+}
+    </style>
+
+
+
+<div class="menu-mobile">☰</div>
+<nav class="nav-mobile">
+  <a href="index.html">Início</a>
+  <a href="produtos.html">Produtos</a>
+  <a href="banho-tosa.html">Banho & Tosa</a>
+  <a href="agendado.html">Agendamento</a>
+  <a href="login.html">Login</a>
+</nav>
+</body>
