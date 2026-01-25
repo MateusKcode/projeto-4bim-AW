@@ -10,6 +10,7 @@
     <script src="../javascript/main.js"></script>
 </head>
 <body>
+
     <nav class="nav-bar">
         <h1 class="petlandia">Petlândia</h1>
         <a href="../html/index.html">Página Inicial</a>
@@ -17,6 +18,15 @@
         <a href="../html/produtos.html" class="active">Produtos</a>
         <a href="../html/login.html" class="btn-login">Login</a>
     </nav>
+
+<div class="barra-pesquisa">
+  <input 
+    type="text" 
+    id="pesquisa"
+    placeholder="Pesquisar produtos..."
+    onkeyup="filtrarProdutos()"
+  >
+</div>
 
 <div class="produtos">
 
