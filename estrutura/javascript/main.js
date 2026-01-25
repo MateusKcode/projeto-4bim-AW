@@ -19,3 +19,9 @@ function filtrarProdutos() {
     }
   });
 }
+
+const menuMobile=document.querySelector('.menu-mobile');
+const navMobile=document.querySelector('.nav-mobile');
+if(menuMobile){
+menuMobile.addEventListener('click',()=>{navMobile.style.display=navMobile.style.display==='flex'?'none':'flex';});
+}
