@@ -1,25 +1,5 @@
 /* =============================
    SEÇÃO DE PRODUTOS
-============================= */
-.produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 2.5rem;
-
-  max-width: 1400px;
-  margin: 4rem auto;
-  padding: 0 2rem;
-
-  background-color: transparent; /* não interfere no layout */
-}
-
-/* =============================
-   CARD DO PRODUTO
-============================= */
-.produto {
-  background-color: #dbffff;
-  padding: 1.2rem;
-  border-radius: 14px;
 
   display: flex;
   flex-direction: column;
@@ -39,49 +19,58 @@
 
 /* =============================
    IMAGEM DO PRODUTO
-============================= */
-.produto img {
-  width: 100%;
-  max-width: 140px;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 1rem;
 }
 
-/* =============================
-   TEXTOS
-============================= */
-.produto h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.3rem;
+
+/* ===============================
+   RESPONSIVIDADE - MOBILE / TABLET
+   =============================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  header, nav, main, footer {
+    padding: 10px;
+  }
+
+  .container, .conteudo, .produtos {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-.produto p {
-  font-size: 0.95rem;
-  line-height: 1.4;
-  margin-bottom: 0.4rem;
-}
+/* Celulares */
+@media (max-width: 768px) {
+  header, nav, main, footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-/* STATUS (fora de estoque) */
-.produto .estoque {
-  margin-top: auto;
-  font-weight: bold;
-  color: #444;
-}
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
 
-.barra-pesquisa {
-  max-width: 400px;
-  margin: 2rem auto;
-  text-align: center;
-}
+  .produtos, .cards, .itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.barra-pesquisa input {
-  width: 100%;
-  padding: 12px 18px;
-  border-radius: 25px;
-  border: 2px solid #5f8f8a;
-  font-size: 16px;
-  outline: none;
+  input, button, select {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 
