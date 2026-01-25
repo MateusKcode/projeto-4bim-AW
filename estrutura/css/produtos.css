@@ -1,0 +1,70 @@
+/* =============================
+   SEÇÃO DE PRODUTOS
+============================= */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2.5rem;
+
+  max-width: 1400px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+
+  background-color: transparent; /* não interfere no layout */
+}
+
+/* =============================
+   CARD DO PRODUTO
+============================= */
+.produto {
+  background-color: #dbffff;
+  padding: 1.2rem;
+  border-radius: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  min-height: 360px;
+
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.produto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* =============================
+   IMAGEM DO PRODUTO
+============================= */
+.produto img {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+/* =============================
+   TEXTOS
+============================= */
+.produto h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.produto p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
+/* STATUS (fora de estoque) */
+.produto .estoque {
+  margin-top: auto;
+  font-weight: bold;
+  color: #444;
+}

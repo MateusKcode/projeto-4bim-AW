@@ -2,10 +2,15 @@
 @import url('https://fonts.cdnfonts.com/css/elastic');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
-body {
-    background-color: #bfe6ef;
-    font-family: 'nunito', sans-serif;
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;  /* impede scroll lateral */
+  overflow-y: auto;    /* garante scroll vertical */
+  background-color: #bfe6ef;
+  font-family: 'nunito', sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -134,29 +139,6 @@ button:hover {
 }
 /*página de login acaba aqui*/
 
-/* Container que controla o layout */
-.produtos {
-  background-color: #bfe6ef;
-  display: flex;
-  margin-top: 5vh;
-  margin-left: 5vh;
-  margin-right: 5vh;
-  gap: 20px;  /* espaço entre produtos */
-  flex-wrap: wrap; /* quebra linha se faltar espaço */
-}
-
-/* Cada produto */
-.produto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 275px;
-  width: 225px;
-  background-color: #dbffff;
-  padding: 10px;
-  border-radius: 8px;
-}
 
 /*parte "quem somos?" da página index :)*/
 .quem-somos {
@@ -209,81 +191,60 @@ button:hover {
 }
 /*acaba aqui*/
 
-/*produtos da página inicial*/
-
-.principais h2 {
-  font-family: 'poppins', sans-serif;
-  color:#5f8f8a;
-  margin-left: 30px;
-  font-size: 35px;
-  text-shadow: 2px 2px #23504e;
-}
-
-.produto-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 275px;
-  width: 225px;
-  background-color: #cfeff4;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.produtos-index {
-  display: flex;
-  margin-top: 5vh;
-  margin-left: 10vh;
-  margin-right: 10vh;
-  margin-block-end: 5vh;
-  gap: 60px;
-  flex-wrap: wrap;
-  background-color: #bfe6ef;
-}
-
 /*parte do banho e tosa da página inicial*/
 
 /*retangulo*/
 .banho-e-tosa {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   background-color: #5f8f8a;
   border-radius: 30px;
-  padding: 20px;
+  padding: 40px;
   min-height: 300px;
-  max-height: 400px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  position: relative;
 }
 
-/*BASE (PC)*/
-.img-banho {
-  width: 100%;
-  max-width: 900px;
-  height: auto;
-  object-fit: cover;
-}
-
+/* container interno */
 .agendar-container {
   display: flex;
   align-items: center;
-  gap: 20px; 
-  flex-shrink: 0.7; 
-}
-.txt-banho {
-  font-size: 30px;
-  margin-bottom: 15px;
-  font-family: 'poppins', sans-serif;
-  color: #fff;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.ir-agendar {
-  display: flex;
-  align-items: flex-start;
+/* textos */
+.textos {
+  max-width: 450px;
 }
+
+.txt-banho {
+  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* botão */
+.btn-agendar {
+  background-color: #a66246;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* imagem */
+.agendar-imagem {
+  width: 620px;
+}
+
+.img-banho {
+  width: 100%;
+  height: auto;
+}
+
 
 /* AINDA FALTA FINALIZAR ESSA PARTE, AJEITO QND CHEGAR DA ESCOLA */

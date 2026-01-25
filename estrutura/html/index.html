@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petlândia Inicio</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/idex.css">
     <link rel="icon" type="image/png" href="../../fotos/logo-pet.png">
     <script src="../javascript/main.js"></script>
 </head>
@@ -15,7 +16,6 @@
         <a href="../html/index.html" class="active">Página Inicial</a>
         <a href="../html/banho-tosa.html">Banho e Tosa</a>
         <a href="../html/produtos.html">Produtos</a>
-        <a href="../html/doacao.html">Adoação de Pets</a>
         <a href="../html/login.html" class="btn-login">Login</a>
     </nav>
 
@@ -86,21 +86,32 @@
   <!--produtos acaba aqui-->
 
 </div>
-<!-- parte do banho e tosa-->
-  <section class="banho-e-tosa">
-    <div class="agendar-container">
-      <div class="textos">
-        <h1 class="txt-banho">MARQUE O BANHO E<br>TOSA DO SEU PET AQUI !!</h1>
-      </div>
-      <div class="ir-agendar">
-        <button><a href="../html/banho-tosa.html">AGENDAR</a></button>
-      </div>
-      <div class="agendar-imagem">
-        <img src="../../fotos/banho-pets.png" alt="pets com roupa de banho" class="img-banho">
-      </div>
+<!-- parte do banho e tosa -->
+<section class="banho-e-tosa">
+  <div class="agendar-container">
+
+    <div class="textos">
+      <h1 class="txt-banho">
+        MARQUE O BANHO E<br>
+        TOSA DO SEU PET AQUI!
+      </h1>
+
+      <button type="button" class="btn-agendar"
+        onclick="window.location.href='../html/banho-tosa.html'">
+        Agendar
+      </button>
     </div>
-  </section>
-  <!--banho e tosa acaba aqui-->
+
+    <div class="agendar-imagem">
+      <img src="../../fotos/banho-pets.png"
+           alt="pets com roupa de banho"
+           class="img-banho">
+    </div>
+
+  </div>
+</section>
+<!-- banho e tosa acaba aqui -->
+
 
 </body>
 </html>
