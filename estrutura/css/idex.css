@@ -44,25 +44,6 @@
   cursor: pointer;
 }
 
-/* imagem */
-.agendar-imagem {
-  position: relative;
-  max-width: 420px;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-}
-
-.img-banho {
-  width: 650px;
-  height: auto;
-  position: absolute;
-  bottom: -150px;
-  right: -80px;
-  pointer-events: none;
-}
-
-
 /*parte quem somos*/
 .quem-somos {
   padding: 60px 0;
@@ -106,6 +87,7 @@
   right: -80px;
   bottom: 0;
   gap: 0px;
+
 }
 
 .quem-imagens img {
@@ -242,5 +224,10 @@
   input, button, select {
     width: 100%;
     max-width: 320px;
+  }
+}
+@media (max-width: 768px) {
+  .pets-hide-banner {
+    display: none;
   }
 }
