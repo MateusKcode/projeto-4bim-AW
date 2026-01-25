@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 @import url('https://fonts.cdnfonts.com/css/elastic');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
-body {
-    background-color: #bfe6ef;
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;  /* impede scroll lateral */
+  overflow-y: auto;    /* garante scroll vertical */
+  background-color: #bfe6ef;
+  font-family: 'nunito', sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -26,15 +33,16 @@ body {
       letter-spacing: 2.4px;
     }
     a:not(.active) {
-      color:#00B3B2;
-      text-shadow: 2px 2px #23504e;
+      color:#ffff;
+      text-decoration: none;
     }
     .active {
       color: #23504e;
       font-size: 18.4px;
+      text-decoration: none;
     }
     a:hover {
-      color:#dbffff;
+      color:#a5e4e4;
     }
     .btn-login {
       background-color: #a66246;
@@ -50,6 +58,7 @@ body {
     }
 }
 
+/*página de login*/
 .login-container {
   background-color: #a66246;
   padding: 40px;
@@ -128,89 +137,60 @@ button:hover {
   margin-top: -160px;
   margin-left: 720px;
 }
+/*página de login acaba aqui*/
 
-.quem-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #5f8f8a;
-  border-radius: 30px;
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+/* ===============================
+   RESPONSIVIDADE - MOBILE / TABLET
+   =============================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  header, nav, main, footer {
+    padding: 10px;
+  }
+
+  .container, .conteudo, .produtos {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-.quem-texto {
-  color: #fff;
-  max-width: 500px;
+/* Celulares */
+@media (max-width: 768px) {
+  header, nav, main, footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .produtos, .cards, .itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input, button, select {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
-.quem-texto h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.quem-texto p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.quem-imagens {
-  display: flex;
-  align-items: flex-end;
-  gap: 0px;
-}
-
-.quem-imagens img {
-  width: 200px;
-}
-/* CONTAINER DOS PRODUTOS */
-.produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2.5rem;
-
-  max-width: 1400px;
-  margin: 5rem auto;
-  padding: 0 2rem;
-}
-
-/* CARD DO PRODUTO */
-.produto {
-  background-color: #dbffff;
-  padding: 1rem;
-  border-radius: 10px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.produto:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-/* IMAGEM */
-.produto img {
-  width: 100%;
-  max-width: 120px;
-  height: auto;
-  margin-bottom: 0.8rem;
-}
-
-/* TÍTULO */
-.produto h3 {
-  font-size: 1.1rem;
-  margin: 0.4rem 0;
-}
-
-/* DESCRIÇÃO */
-.produto p {
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
+.menu-mobile{display:none;font-size:32px;cursor:pointer;position:absolute;top:20px;right:20px;z-index:1001}
+.nav-mobile{display:none;flex-direction:column;position:fixed;top:0;right:0;width:220px;height:100vh;background:#fff;padding:80px 20px;box-shadow:-2px 0 10px rgba(0,0,0,.2);z-index:1000}
+.nav-mobile a{margin:15px 0;text-decoration:none;color:#333;font-size:18px}
+@media(max-width:768px){nav{display:none}.menu-mobile{display:block}}

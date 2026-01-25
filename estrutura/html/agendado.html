@@ -1,46 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doação de pets</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/png" href="../../fotos/logo-pet.png">
-    <script src="../javascript/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doação de pets</title>
+  <link rel="icon" type="image/png" href="../../fotos/logo-pet.png">
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #cfeff4;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .container h1 {
+      margin-bottom: 20px;
+      color: #2b6f73;
+      font-size: 26px;
+    }
+
+    .btn-voltar {
+      display: inline-block;
+      background-color: #4fa3a5;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-voltar:hover {
+      background-color: #3c8c8e;
+    }
+  </style>
 </head>
+
 <body>
-    <nav class="nav-bar">
-        <h1 class="petlandia">Petlândia</h1>
-        <a href="../html/index.html">Página Inicial</a>
-        <a href="../html/banho-tosa.html">Banho e Tosa</a>
-        <a href="../html/produtos.html">Produtos</a>
-        <a href="../html/login.html" class="btn-login">Login</a>
-    </nav>
 
-<div class="botao-centro">
-    <h1>Agendamento concluído com exito!</h1>
-  <a href="../html/index.html" class="btn-voltar">Voltar para o início</a>
-</div>
+  <div class="container">
+    <h1>Agendamento concluído com êxito!</h1>
+    <a href="../html/index.html" class="btn-voltar">Voltar para o início</a>
+  </div>
 
-        <style>
-h1 {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-.botao-centro {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
 
-.btn-voltar {
-  background-color: #4fa3a5;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-        </style>
 
 </body>
+</html>
